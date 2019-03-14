@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
     
-    <groupId>dev.johnson</groupId>
+    <groupId>io.github.relvl</groupId>
     <artifactId>thread.pool.manager</artifactId>
     <version>1.0.0</version>
     
