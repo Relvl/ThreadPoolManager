@@ -1,0 +1,13 @@
+.idea/
+*.iml
+*.ipr
+*.iws
+target/
+node_modules/
+/nbactions.xml/bin/
+.project
+.classpath
+.settings/
+*nbactions.xml
+*.netbeans*
+/.env
