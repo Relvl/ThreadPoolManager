@@ -25,8 +25,8 @@
         <url>http://github.com/Relvl/ThreadPoolManager</url>
         <connection>scm:git:https://github.com/Relvl/ThreadPoolManager.git</connection>
         <developerConnection>scm:git:https://github.com/Relvl/ThreadPoolManager.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
     
     <properties>
         <kotlin.version>1.2.71</kotlin.version>
@@ -90,6 +90,28 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.jetbrains.dokka</groupId>
+                <artifactId>dokka-maven-plugin</artifactId>
+                <version>0.9.17</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>javadocJar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputFormat>html</outputFormat>
+                    <outputDir>${project.build.directory}/javadoc-dokka</outputDir>
+                    <sourceDirectories>
+                        <dir>src/main/kotlin</dir>
+                    </sourceDirectories>
+                    <noStdlibLink>true</noStdlibLink>
+                </configuration>
             </plugin>
             
             <plugin>
