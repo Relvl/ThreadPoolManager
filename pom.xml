@@ -11,7 +11,7 @@
     
     <groupId>io.github.relvl</groupId>
     <artifactId>thread.pool.manager</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6-SNAPSHOT</version>
     
     <licenses>
         <license>
@@ -25,7 +25,7 @@
         <url>http://github.com/Relvl/ThreadPoolManager</url>
         <connection>scm:git:https://github.com/Relvl/ThreadPoolManager.git</connection>
         <developerConnection>scm:git:https://github.com/Relvl/ThreadPoolManager.git</developerConnection>
-        <tag>thread.pool.manager-1.0.5</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <properties>
