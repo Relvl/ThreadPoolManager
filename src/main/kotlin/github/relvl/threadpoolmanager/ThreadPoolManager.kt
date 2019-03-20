@@ -5,7 +5,7 @@ import java.util.concurrent.*
 import java.util.concurrent.atomic.AtomicInteger
 
 /** Потоковый пул по-умолчанию.
- * @author karpov-em on 014, 14.03.2019*/
+ * @author Relvl on 014, 14.03.2019*/
 object ThreadPoolManager : IThreadPoolManager {
     private val LOGGER = LoggerFactory.getLogger(ThreadPoolManager::class.java)
     private val THREAD_POOL_MAX_SCHEDULE_DELAY = TimeUnit.NANOSECONDS.toMillis(java.lang.Long.MAX_VALUE - System.nanoTime()) / 2
